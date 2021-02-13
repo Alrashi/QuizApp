@@ -7,6 +7,19 @@ void main() {
   car1.name = "Audi";
   car1.wheelsNumber = 4;
   printFunction(car1);
+
+  Company company1 = Company('Ahmad');
+
+  Department department1 = Department();
+  department1.name = "IT";
+  department1.comp = company1;
+
+  Person person1 = Person();
+  person1.id = 1234;
+  person1.name = "Adam";
+  person1.dep = department1;
+  person1.veh = car1;
+
   runApp(MaterialApp(
     theme: ThemeData(
       visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -30,39 +43,43 @@ void main() {
           ),
           RaisedButton(
               child: Text(
-                "Child. 1",
+                "Company",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.amber,
               onPressed: () {
-                print("child. 1 is clicked");
+                cprintFunction(company1);
+                //print("child. 1 is clicked");
               }),
           RaisedButton(
               child: Text(
-                "Child. 2",
+                "Department",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.amber,
               onPressed: () {
-                print("child. 2 is clicked");
+                dprintFunction(department1);
+                //print("child. 2 is clicked");
               }),
           RaisedButton(
               child: Text(
-                "Child. 3",
+                "Person",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.amber,
               onPressed: () {
-                print("child. 3 is clicked");
+                pprintFunction(person1);
+                //print("child. 3 is clicked");
               }),
           RaisedButton(
               child: Text(
-                "Child. 4",
+                "Vehicle",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.amber,
               onPressed: () {
-                print("child. 4 is clicked");
+                printFunction(car1);
+                //print("child. 4 is clicked");
               }),
         ],
       ),
@@ -71,11 +88,22 @@ void main() {
 }
 
 void printFunction(Vehicle a) {
-  String b = "Ahmad";
-  int age = 32;
-  print("Testinggggggg");
   print("${a.name} , ${a.wheelsNumber}");
-  print("$b , $age");
+}
+
+void cprintFunction(Company a) {
+  print("${a.name} , ${a.address}, ${a.numberOfEmp}");
+  print("company is pressed");
+}
+
+void dprintFunction(Department a) {
+  print(
+      "${"Name: " + a.name} , ${"Main Company" + a.comp.name}, ${a.numberOfEmp}");
+}
+
+void pprintFunction(Person a) {
+  print(
+      "${"Person Name: " + a.name} , ${a.id}, ${"Vehicle Name: " + a.veh.name}, ${"works in department: " + a.dep.name}");
 }
 
 class MyApp extends StatelessWidget {
