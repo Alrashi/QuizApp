@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'homeContainerColorApp.dart';
+import 'homeFoodApp.dart';
+import 'stateFoodApp.dart';
 
-class ContainerColorApp extends StatelessWidget {
+class MainFoodApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Container Color Change",
+      title: "Food App",
       home: Home(),
     );
   }

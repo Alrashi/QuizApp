@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'dartfundemental/student.dart';
 import 'classes_tutorial.dart';
 import 'package:germanapp/statefullWidget/quizInteractive.dart';
+import './containerColorsApp/mainContainerColorsApp.dart';
+import './foodApp/mainFoodApp.dart';
+import 'germanApp/homeGermanApp.dart';
+import 'germanApp/mainGermanApp.dart';
 
 void main() {
   // Vehicle car1 = Vehicle();
@@ -21,7 +25,10 @@ void main() {
   // person1.dep = department1;
   // person1.veh = car1;
 
-  runApp(QuizApp()
+  runApp(MyApp()
+      //MainFoodApp()
+      //ContainerColorApp()
+      //QuizApp()
       //     MaterialApp(
       //   theme: ThemeData(
       //     visualDensity: VisualDensity.adaptivePlatformDensity,
