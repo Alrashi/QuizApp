@@ -1,0 +1,26 @@
+  var qAnda = [
+    {
+      "question": "question1",
+      "answers": [
+        {"title": "answer11"},
+        {"title": "answer21"},
+        {"title": "answer31"}
+      ]
+    },
+    {
+      "question": "question2",
+      "answers": [
+        {"title": "answer12"},
+        {"title": "answer22"},
+        {"title": "answer32"}
+      ]
+    },
+    {
+      "question": "question3",
+      "answers": [
+        {"title": "answer13"},
+        {"title": "answer23"},
+        {"title": "answer33"}
+      ]
+    }
+  ];

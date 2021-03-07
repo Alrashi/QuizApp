@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dartfundemental/student.dart';
-import 'classes_tutorial.dart';
-import 'package:germanapp/statefullWidget/quizInteractive.dart';
-import './containerColorsApp/mainContainerColorsApp.dart';
-import './foodApp/mainFoodApp.dart';
-import 'germanApp/homeGermanApp.dart';
 import 'germanApp/mainGermanApp.dart';
+import 'germanQuizzApp/mainGermanQuizzApp.dart';
 
 void main() {
   // Vehicle car1 = Vehicle();
@@ -25,7 +20,8 @@ void main() {
   // person1.dep = department1;
   // person1.veh = car1;
 
-  runApp(MyApp()
+  runApp(MainGermanQuizzApp()
+      //MyApp()
       //MainFoodApp()
       //ContainerColorApp()
       //QuizApp()
@@ -114,67 +110,4 @@ void main() {
 // void pprintFunction(Person a) {
 //   print(
 //       "${"Person Name: " + a.name} , ${a.id}, ${"Vehicle Name: " + a.veh.name}, ${"works in department: " + a.dep.name}");
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(home: Home());
-//   }
-// }
-
-// class Home extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Center(
-//         child: Column(
-//           children: [
-//             Container(
-//               margin: EdgeInsets.all(20),
-//               child: Text("Why do you want to learn Flutter?"),
-//             ),
-//             Container(
-//                 margin: EdgeInsets.all(20),
-//                 child: Column(
-//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                   children: [
-//                     ButtonTheme(
-//                       minWidth: 200.0,
-//                       height: 100.0,
-//                       child: FlatButton(
-//                         child: Text("it's easy"),
-//                         color: Colors.white,
-//                         shape: Border.all(color: Colors.black),
-//                         onPressed: () {},
-//                       ),
-//                     ),
-//                     FlatButton(
-//                       minWidth: 200.0,
-//                       height: 100.0,
-//                       child: Text("it's a cross platform"),
-//                       color: Colors.white,
-//                       shape: Border.all(color: Colors.black),
-//                       onPressed: () {},
-//                     ),
-//                     ButtonTheme(
-//                       minWidth: 200.0,
-//                       height: 100.0,
-//                       child: FlatButton(
-//                         child: Text("it's fun"),
-//                         color: Colors.white,
-//                         shape: Border.all(color: Colors.black),
-//                         onPressed: () {},
-//                       ),
-//                     )
-//                   ],
-//                 )),
-//           ],
-//         ),
-//       ),
-//       appBar: AppBar(
-//         title: Text("German Quiz"),
-//       ),
-//     );
-//   }
 // }
