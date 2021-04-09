@@ -30,4 +30,30 @@ class ToDo {
     _date = object['date'];
     _priority = object['priority'];
   }
+
+  int get id => _id;
+  String get title => _title;
+  String get description => _description;
+  String get date => _date;
+  int get prority => _priority;
+
+  set setId(int id) {
+    _id = id;
+  }
+
+  set setTitle(String title) {
+    _title = title;
+  }
+
+  set setDescription(String description) {
+    _description = description;
+  }
+
+  set setDate(String date) {
+    _date = date;
+  }
+
+  set setPriority(int priority) {
+    _priority = priority;
+  }
 }
